@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id="title">Formulario de encuesta de la Politecnica</h1>
+    <p id="description">Esta encuesta es para tener mayor conocimiento de la opinion publica, agradecemos su tiempo.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Detalles personales</legend>
+        <label id="name-label">Nombre <input id="name" type="text" placeholder="Ingrese su nombre" class="edit" required></label>
+        <label id="number-label">Edad <input id="number" type="number" min="18" max="80" placeholder="Ingrese su edad" class="edit"></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Ingrese su email" class="edit" required></label>
+        <label>Carrera: 
+          <select id="dropdown" class="edit">
+            <option value="">(seleccionar carrera)</option>
+            <option value="1">Ingenieria en Informatica</option>
+            <option value="2">Ingenieria en Electricidad</option>
+            <option value="3">Ingenieria en Electronica</option>
+            <option value="4">Ingenieria en Marketing</option>
+            <option value="5">Ingenieria en Sistemas de Produccion</option>
+            <option value="6">Ingenieria en Aeronautica</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Como clasificarias en promedio a los profesores?</legend>
+        <label><input type="radio" name="clasificacion-profes" value="falta-vocacion">Falta de vocacion.</label>
+        <label><input type="radio" name="clasificacion-profes" value="buenos" checked>Generalmente buenos.</label>
+        <label><input type="radio" name="clasificacion-profes" value="muy-buenos">Muy buenos todos, sin quejas.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Estas satisfecho con el estado de las aulas</legend>
+        <label><input type="radio" name="estado-aulas" value="estado-nefasto" checked>Las aulas estan en un estado nefasto.</label>
+        <label><input type="radio" name="estado-aulas" value="bien">Bien, pero podria estar mejor.</label>
+        <label><input type="radio" name="estado-aulas" value="super-bien">Estan super bien.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cuales de estas cualidades crees que es necesario que tenga un profesor</legend>
+        <label><input type="checkbox" value="empaticos"> Que sean empaticos.</label>
+        <label><input type="checkbox" value="pacientes"> Que sean pacientes (que entiendan que no todos aprenden de la misma forma y tiempo).</label>
+        <label><input type="checkbox" value="generar-interes"> Que sepan generar interes en la materia al estudiantado.</label>
+        <label><input type="checkbox" value="enseñanza-eficaz"> Metodo de enseñanza eficaz.</label>
+        <label><input type="checkbox" value="dominio-materia"> Que tengan un dominio de materia.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>En general te sientes satisfecho con la facultad politecnica? Tu opinion es importante para nosotros:
+          <textarea rows="3" cols="30"  placeholder="Opino que..."></textarea>
+        </legend>
+      </fieldset>
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+
+  </body>
+</html>
